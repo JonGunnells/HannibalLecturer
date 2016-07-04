@@ -15,6 +15,9 @@ var hanLec = {
   },
   events: function() {
 
+  $('#clearform').on('click', function () {
+              $('#form_id').find('input:text').val('');}
+
     $('.create-rating, .ratings').on('click',"input[name='back-to-lecturers']",function() {
       hanLec.getLecturers();
     })
